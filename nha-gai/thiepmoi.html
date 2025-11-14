@@ -188,7 +188,7 @@
             </div>
 
 
-            <form action="" name="huong-anh">
+            <form action="" name="mai-kien">
                 <div class="logo">
                     <div class="box-flow">
                         <img src="../anh/flower3-03.png" alt="" class="">
@@ -344,8 +344,8 @@
 
     </script>
     <script>
-        const scripConfirmtURL = 'https://script.google.com/macros/s/AKfycbygpqhzOLUQzAcqvCmHIK3c8PCphmy0L02DL5UUo6zOIG5zytitcRaaxm_chs20MRHd/exec?sheet=confirm';
-        const form = document.forms['huong-anh'];
+        const scripConfirmtURL = 'https://script.google.com/macros/s/AKfycbyZ0IXLFPZhX52xUZj8BBPJx5bl_VVYPhnwkzcz7henrb5xmRVQHnB441jea-EWWJIH/exec?sheet=nha-gai';
+        const form = document.forms['mai-kien'];
 
         form.addEventListener('submit', e => {
             e.preventDefault(); // Ngừng việc gửi form mặc định
@@ -357,13 +357,13 @@
             const confirm = data.CONFIRM;
             const name = data.NAME;
             const number_guest = data.GUEST;
-            const movement = data.movement;
+            const dietary = data.dietary;
             const wish = data.WISH;
 
             // Gửi dữ liệu form đi
             fetch(scripConfirmtURL, {
                 method: 'POST',
-                body: new URLSearchParams({ name, confirm, number_guest, movement, wish })
+                body: new URLSearchParams({ name, confirm, number_guest, dietary, wish })
             })
                 .then(response => {
                     if (response.ok) {
@@ -378,6 +378,7 @@
                             imageWidth: 300,
                             imageHeight: 200,
                             confirmButtonText: 'ĐÓNG',
+                            confirmButtonColor: "#505738",
                             background: '#f8f8f8',
                             padding: '20px',
                             customClass: {
