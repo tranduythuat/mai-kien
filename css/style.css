@@ -1248,6 +1248,11 @@ textarea::placeholder {
 
 .qr-container img {
   margin-top: 20px;
+  width: 50%;
+}
+
+.qr-container p {
+  font-size: 17px;
 }
 
 /* Định nghĩa hoạt ảnh xoay */
@@ -1354,5 +1359,12 @@ textarea::placeholder {
   }
   .lb-thank  {
     font-size: calc((35 / 480) * 100vw);
+  }
+
+  .qr-container p {
+    font-size: calc((17 / 480) * 100vw);
+  }
+  div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    font-size: calc((16 / 480) * 100vw);
   }
 }
