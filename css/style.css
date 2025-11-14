@@ -162,18 +162,18 @@
 }
 
 /* Hiệu ứng fade-left */
-/* .box-nam,
+.box-nam,
 .img2 {
   transform: translateX(50px);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
-} */
+}
 
-/* .box-nam.visible,
+.box-nam.visible,
 .img2.visible {
   transform: translateX(0);
   opacity: 1;
-} */
+}
 
 /* Hiệu ứng zoom-in */
 .timeline-top,
@@ -1252,7 +1252,7 @@ textarea::placeholder {
 
 @media (max-width: 480px) {
   .container {
-    /* width: 100%; */
+    width: 100%;
   }
   .box-image {
     margin-left: -15px;
