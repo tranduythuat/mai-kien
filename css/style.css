@@ -162,18 +162,18 @@
 }
 
 /* Hiệu ứng fade-left */
-.box-nam,
+/* .box-nam,
 .img2 {
   transform: translateX(50px);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
-}
+} */
 
-.box-nam.visible,
+/* .box-nam.visible,
 .img2.visible {
   transform: translateX(0);
   opacity: 1;
-}
+} */
 
 /* Hiệu ứng zoom-in */
 .timeline-top,
@@ -282,7 +282,7 @@
 }
 
 .container {
-  width: 414px;
+  width: 480px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -304,7 +304,7 @@
 
 .box-contop {
   width: 100%;
-  height: auto;
+  height: 718px;
   background-image:linear-gradient(rgba(0, 0, 0, 0.112), rgba(0, 0, 0, 0.334)), url("https://yenstudio.info.vn/mai-kien/LMC_0749.jpg");
   background-position: 100% 100%;
   background-size: cover;
@@ -324,7 +324,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding-top: 350px;
+  padding-top: 513px;
 }
 
 .dotwelcome {
@@ -364,7 +364,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
 }
 
 .info hr {
@@ -394,6 +393,10 @@
   max-height: 120px;
 }
 
+.divider-img {
+  margin: 50px 0;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -414,19 +417,18 @@
   text-align: center;
 }
 
-.inv label.lb-inv {
-  padding-top: 10px;
-  font-size: 32px;
+.box-map {
+  width: 50%;
 }
 
-.box-map {
-  padding: 0 48px;
+.inv label.lb-inv {
+  font-size: 32px;
 }
 
 .kinhmoi {
   font-family: var(--font-lora);
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.5em;
   margin-bottom: 5px;
 }
 
@@ -444,25 +446,21 @@
 
 .img-inv {
   width: 50%;
-  margin: 29px 0;
+  margin: 50px 0;
 }
 
 .time-add {
   margin: 24px 0 30px;
 }
 
-.time-add .location-name {
-  padding-top: 22px;
-}
-
 .lb-time {
   font-family: var(--font-lora);
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .lb-add {
   font-family: var(--font-pinyon);
-  font-size: 24px;
+  font-size: 2.3em;
 }
 
 .add2 {
@@ -472,14 +470,14 @@
 }
 
 .maps {
-  width: 80%;
-  border: 2px solid var(--header-color);
+  width: 100%;
+  border: 2px solid var(--primary-color);
   text-decoration: none;
   font-family: var(--font-lora);
-  color: var(--header-color);
-  font-size: 0.6em;
+  color: var(--primary-color);
+  font-size: 0.7em;
   border-radius: 20px;
-  margin: 10px 0 35px;
+  margin: 10px 0 50px;
   padding: 2px 0;
 }
 
@@ -507,12 +505,12 @@
 
 .lb-timeline2 {
   font-family: var(--font-lora);
-  font-size: 0.5em;
+  font-size: 0.6em;
   letter-spacing: 0.5px;
 }
 
 .img-timeline {
-  width: 15%;
+  width: 13%;
   margin-bottom: 15px;
 }
 
@@ -534,6 +532,7 @@
 
 .box-dresscode {
   color: var(--primary-color);
+  width: 100%;
 }
 
 .box-dress,
@@ -557,7 +556,98 @@
   font-size: 0.5em;
   letter-spacing: 0.5px;
   word-spacing: 0.5px;
-  width: 60%;
+}
+
+.box-dresscode .description {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.box-dresscode .description .box-color {
+  margin: 0 10px;
+}
+
+.box-dresscode .description .box-color .color-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box-dresscode .description .box-color .color-items .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.box-nam {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+} 
+
+.box-nam .color-items {
+  width: 70%;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 22px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-nam .lb-nam {
+  font-size: .9em;
+  font-weight: 400;
+  display: block;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  width: 70%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.box-nu {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+.box-nu .color-items{
+  width: 85%;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-nu .color-items .item {
+  height: 57px;
+}
+
+.box-nu .lb-nu {
+  font-size: .9em;
+  font-weight: 400;
+  display: block;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  width: 85%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.lb-color {
+  font-size: .7em;
 }
 
 .dresscode-items {
@@ -567,21 +657,19 @@
   padding: 5% 0 20%;
 }
 
-.dresscode-items .color-box {
-  max-width: 40px;
+.box-dresscode .description .color-box {
+  max-width: 26px;
   width: 100%;
-  aspect-ratio: 40 / 40;
+  aspect-ratio: 26 / 26;
   border-radius: 50%;
-  margin: 2%;
+  margin-bottom: 5px;
 }
-
 
 .box-image1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 60px;
 }
 
 .img1,
@@ -594,8 +682,8 @@
 /* SLIDER */
 .slider {
   position: relative;
-  width: 88%; /* chỉnh kích thước */
-  height: 500px;
+  width: 95%; /* chỉnh kích thước */
+  height: 700px;
   margin: auto;
   overflow: hidden;
   border-radius: 24px;
@@ -646,7 +734,7 @@ form {
   color: var(--primary-color);
 }
 form .logo {
-  padding-top: 90px;
+  padding-top: 30px;
 }
 .feed-info {
   display: flex;
@@ -1176,7 +1264,7 @@ textarea::placeholder {
     font-size: 0.5em;
   }
   .lb-add {
-    font-size: 25px;
+    font-size: calc((2.3em / 480px) * 100vw);
   }
   .lb-line1,
   .lb-name {
