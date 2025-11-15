@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Lora";
-  src: url("Lora-Regular.woff2") format("woff2"),
-    url("Lora-Regular.woff") format("woff");
+  src: url("../fonts/Lora-Regular.woff2") format("woff2"),
+    url("../fonts/Lora-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Lora Regular";
-  src: url("Lora-Regular.woff2") format("woff2"),
-    url("Lora-Regular.woff") format("woff");
+  src: url("../fonts/Lora-Regular.woff2") format("woff2"),
+    url("../fonts/Lora-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -434,8 +434,12 @@
   text-align: center;
 }
 
-.box-map {
+.box-map-trai {
   width: 50%;
+}
+
+.box-map-gai {
+  width: 53%;
 }
 
 .inv label.lb-inv {
