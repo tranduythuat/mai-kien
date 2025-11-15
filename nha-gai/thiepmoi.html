@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="description">
-                    <div class="box-nam box-color visible">
+                    <!-- <div class="box-nam box-color visible">
                         <label for="" class="lb-nam">NAM</label>
                         <div class="color-items">
                             <div class="item">
@@ -137,9 +137,9 @@
                                 <label for="" class="lb-color">ĐEN</label>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="box-nu box-color visible">
-                        <label for="" class="lb-nu">NỮ</label>
+                        <!-- <label for="" class="lb-nu">NỮ</label> -->
                         <div class="color-items">
                             <div class="item">
                                 <div data-aos="fade-right" data-aos-delay="0" class="color-box" style="background: #e7a98c"></div>
@@ -190,38 +190,54 @@
             <div class="container-slide">
                 <div class="slider">
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_8784_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/_ANH3163_(2).webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_8979_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_0280_(2).webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_9401_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_9924_(2).webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_8881_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_9908_(2).webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_8940_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_0761.webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_9093_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_0830.webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_8419_(2).webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_1284_(2).webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_9231_(2)-2.webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_1127.webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/LMC_0432_(2).webp" alt="" style="object-position: 70% 100%;">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_8707_(2)-2.webp" alt="">
                     </div>
+
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/_ANH3163_(2).webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_8940_(2)-2.webp" alt="">
                     </div>
+                    
                     <div class="slide">
-                        <img src="https://yenstudio.info.vn/mai-kien/album/_ANH3305_(2).webp" alt="">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_9328_(2)-2.webp" alt="">
                     </div>
+
+                    <div class="slide">
+                        <img src="https://yenstudio.info.vn/mai-kien/album-1/LMC_9359_(2)-2.webp" alt="">
+                    </div>
+                    <button class="btn btn-next"><i class="fa-solid fa-caret-right"></i></button>
+                    <button class="btn btn-prev"><i class="fa-solid fa-caret-left"></i></button>
                 </div>
                 <div class="dots"></div>
             </div>
@@ -477,6 +493,16 @@
         });
 
         const dots = document.querySelectorAll('.dot');
+        const nextSlideBtn = document.querySelector(".btn-next");
+        const prevSlideBtn = document.querySelector(".btn-prev");
+
+        nextSlideBtn.addEventListener("click", () => {
+            nextSlide();
+        })
+
+        prevSlideBtn.addEventListener("click", () => {
+            prevSlide();
+        })
 
         function showSlide(index) {
             slides.forEach(s => s.style.display = 'none');
@@ -497,13 +523,22 @@
             showSlide(currentIndex);
         }
 
+        function prevSlide() {
+            if (currentIndex === 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex--;
+            }
+            showSlide(currentIndex);
+        }
+
         function startSlideShow() {
             slideInterval = setInterval(nextSlide, 5000); // 5 giây đổi ảnh
         }
 
         // hiển thị slide đầu tiên
         showSlide(currentIndex);
-        startSlideShow();
+        // startSlideShow();
 
     </script>
     <script>
