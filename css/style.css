@@ -435,7 +435,7 @@
 }
 
 .box-map-trai {
-  width: 50%;
+  width: 68%;
 }
 
 .box-map-gai {
@@ -491,7 +491,7 @@
 }
 
 .maps {
-  width: 100%;
+  width: 80%;
   border: 2px solid var(--primary-color);
   text-decoration: none;
   font-family: var(--font-lora);
