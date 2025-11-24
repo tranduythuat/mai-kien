@@ -306,7 +306,7 @@
   width: 100%;
   max-width: 478px;
   aspect-ratio: 478 / 718;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.197)), url("https://yenstudio.info.vn/mai-kien/LMC_0813%20(1).jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.181), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.197)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/mai-kien/LMC_0813%20(1).jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1061,7 +1061,7 @@ textarea::placeholder {
 }
 
 .end {
-  background-image: url('https://yenstudio.info.vn/mai-kien/LMC_0490_(2).jpg');
+  background-image: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/mai-kien/LMC_0490_(2).jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
